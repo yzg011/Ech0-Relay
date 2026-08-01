@@ -12,6 +12,7 @@ instances:
     # 注意：.github/workflows/sync.yml 需把对应 secret 显式映射进 env（GH 无法动态索引 secret）。
     token_env: ECH0_RELAY_TOKEN
 
+
 # 同步任务：每条把一个公开 Telegram 频道镜像进一个实例。
 syncs:
   - name: ech0-relay/TestFlightCN     # state key，稳定唯一；留空则默认 "<instance>/<channel>"
