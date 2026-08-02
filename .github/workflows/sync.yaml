@@ -4,8 +4,8 @@ name: sync
 
 on:
   schedule:
-    # Every 1 minutes
-    - cron: '*/1 * * * *'
+    # Every 30 minutes
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 permissions:
