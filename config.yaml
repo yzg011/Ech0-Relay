@@ -32,4 +32,26 @@ syncs:
 
     # 首次运行（无 state 游标）行为：
     backfill_on_first_run: true  # false（默认）= 只记录当前最新 id、不补历史，避免首刷屏
+    backfill_limit: 20            # 仅当 backfill_on_first_run=true 时生效，补最近这么多
+  - name: ech0-relay/TestFlightCN     # state key，稳定唯一；留空则默认 "<instance>/<channel>"
+    channel: TestFlightCN         # 公开频道 slug，抓取 https://t.me/s/TestFlightCN
+    instance: ech0-relay              # 指向上面 instances 里的键
+    tag: TestFlightCN             # 来源标签；keep>0 时必填，且同实例内各 retention 任务的 tag 必须唯一
+    max_per_run: 10               # 每次运行最多发布几条（按最旧优先，积压跨轮排空）
+    with_source_link: true        # 正文尾部追加 “🔗 https://t.me/<channel>/<id>”
+    private: false                # 是否发为私密
+
+    # 图片托管方式。false(默认)= 正文嵌入 Telegram CDN 图片直链(链接可能失效);
+    # true = 下载图片并上传到 Ech0 实例本地存储(localfs),以 waterfall 布局挂载到帖子,
+    # 永久留存、删帖时级联清理。开启需 token 额外具备 file:write 作用域。
+    # 单张图片上传/下载失败时自动降级为该图的 CDN 直链,不阻塞同步。
+    upload_images: false
+
+    # 保留清理（可选）。keep > 0 时启用：只保留该标签下最新 keep 条，删除更旧的。
+    # 只会删除带上面 tag 的帖子，绝不触碰你手写的内容。
+    keep: 50                       # 0/缺省 = 不清理
+    max_delete_per_run: 50        # 每轮删除数量上限（安全护栏）
+
+    # 首次运行（无 state 游标）行为：
+    backfill_on_first_run: false  # false（默认）= 只记录当前最新 id、不补历史，避免首刷屏
     backfill_limit: 20            # 仅当 backfill_on_first_run=true 时生效，补最近这么多条
