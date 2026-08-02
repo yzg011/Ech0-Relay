@@ -35,7 +35,7 @@ syncs:
     backfill_limit: 20            # 仅当 backfill_on_first_run=true 时生效，补最近这么多
   - name: ech0-relay/TestFlightCN     # state key，稳定唯一；留空则默认 "<instance>/<channel>"
     channel: TestFlightCN         # 公开频道 slug，抓取 https://t.me/s/TestFlightCN
-    instance: ech0-relay              # 指向上面 instances 里的键
+    instance: myblog              # 指向上面 instances 里的键
     tag: TestFlightCN             # 来源标签；keep>0 时必填，且同实例内各 retention 任务的 tag 必须唯一
     max_per_run: 10               # 每次运行最多发布几条（按最旧优先，积压跨轮排空）
     with_source_link: true        # 正文尾部追加 “🔗 https://t.me/<channel>/<id>”
