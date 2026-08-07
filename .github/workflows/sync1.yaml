@@ -1,6 +1,6 @@
 # Scheduled sync: download the latest release binary, relay new Telegram posts
 # into Ech0, then commit the updated cursor state back to the repo.
-name: sync
+name: sync1
 
 on:
   schedule:
