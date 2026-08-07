@@ -19,7 +19,6 @@ concurrency:
 jobs:
   sync:
     runs‑on: ubuntu‑latest
-    timeout‑minutes: 1  # 增加任务超时，防止无限hang住，匹配你截图15m+耗时
     steps:
       - uses: actions/checkout@v7
         with:
