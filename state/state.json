@@ -2,12 +2,12 @@
   "version": 1,
   "syncs": {
     "ech0-relay/TestFlightCN": {
-      "last_message_id": 43477,
-      "updated_at": "2026-08-29T05:12:26Z"
+      "last_message_id": 43482,
+      "updated_at": "2026-08-29T11:44:07Z"
     },
     "ech0-relay/yzg011": {
-      "last_message_id": 18,
-      "updated_at": "2026-08-28T23:38:16Z"
+      "last_message_id": 19,
+      "updated_at": "2026-08-29T11:44:05Z"
     }
   }
 }
