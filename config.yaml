@@ -34,10 +34,10 @@ syncs:
     backfill_on_first_run: true  # false（默认）= 只记录当前最新 id、不补历史，避免首刷屏
     backfill_limit: 20            # 仅当 backfill_on_first_run=true 时生效，补最近这么多
 
-  - name: ech0-relay/xuednj1   # state key，稳定唯一；留空则默认 "<instance>/<channel>"
-    channel: xuednj1      # 公开频道 slug，抓取 https://t.me/s/TestFlightCN
+  - name: ech0-relay/xuendj1   # state key，稳定唯一；留空则默认 "<instance>/<channel>"
+    channel: xuendj1      # 公开频道 slug，抓取 https://t.me/s/TestFlightCN
     instance: myblog              # 指向上面 instances 里的键
-    tag: xuednj1            # 来源标签；keep>0 时必填，且同实例内各 retention 任务的 tag 必须唯一
+    tag: xuendj1            # 来源标签；keep>0 时必填，且同实例内各 retention 任务的 tag 必须唯一
     max_per_run: 10               # 每次运行最多发布几条（按最旧优先，积压跨轮排空）
     with_source_link: true        # 正文尾部追加 “🔗 https://t.me/<channel>/<id>”
     private: false                # 是否发为私密
