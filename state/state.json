@@ -2,8 +2,8 @@
   "version": 1,
   "syncs": {
     "ech0-relay/TestFlightCN": {
-      "last_message_id": 44293,
-      "updated_at": "2026-10-09T01:39:13Z"
+      "last_message_id": 44305,
+      "updated_at": "2026-10-09T08:20:04Z"
     },
     "ech0-relay/bdbdndn11": {
       "last_message_id": 117126,
@@ -14,8 +14,8 @@
       "updated_at": "2026-10-03T09:20:00Z"
     },
     "ech0-relay/xuendj1": {
-      "last_message_id": 400099,
-      "updated_at": "2026-10-09T01:39:07Z"
+      "last_message_id": 400115,
+      "updated_at": "2026-10-09T08:19:56Z"
     },
     "ech0-relay/yzg011": {
       "last_message_id": 27,
