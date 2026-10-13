@@ -19,7 +19,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 1  # 全局1分钟超时，超时直接中断任务
+    timeout-minutes: 2  # 全局1分钟超时，超时直接中断任务
     steps:
       - name: "🔍 打印运行上下文信息"
         timeout-minutes: 1
