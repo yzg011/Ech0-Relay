@@ -30,12 +30,16 @@
       "updated_at": "2026-10-03T09:20:00Z"
     },
     "ech0-relay/xuendj1": {
-      "last_message_id": 401577,
-      "updated_at": "2026-10-14T02:36:56Z"
+      "last_message_id": 401591,
+      "updated_at": "2026-10-14T02:54:08Z"
     },
     "ech0-relay/yzg011": {
       "last_message_id": 31,
       "updated_at": "2026-10-14T02:36:33Z"
+    },
+    "ech0-relay/yzg088": {
+      "last_message_id": 13,
+      "updated_at": "2026-10-14T02:54:12Z"
     }
   }
 }
